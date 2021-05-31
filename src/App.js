@@ -23,7 +23,7 @@ function App()
                    
                 </div>
                 <div className="slide-content" >
-                    <a target="_blank" href="https://wa.me/9344553066"><h5 >Click to <i className="fa fa-whatsapp"> Whatsapp ></i></h5></a>
+                    <a target="_blank" href="https://wa.me/+919344553066"><h5 >Click to <i className="fa fa-whatsapp"> Whatsapp ></i></h5></a>
                 </div>        
             </div>
         </div>
