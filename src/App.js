@@ -12,6 +12,8 @@ function App()
                 <h3>Designs Spot</h3>
                 <h6>mobile</h6>
                 <h6> 9344553066 </h6>
+                <h6>email</h6>
+                <h6> Something@gmail.com </h6>
                 
                 <div className="icon-content">
                     <div className="centy" >
