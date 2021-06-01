@@ -30,3 +30,16 @@ iframe{
 .common{
     padding: 70px 0;
 }
+.section3{
+    float: left;
+    width: 50%;
+    /* border-right: lawngreen solid 2px; */
+    padding-right: -40px;
+    padding-bottom: 40px;
+}
+.map{
+    float: right;
+    width: 50%;
+    height: 50%;
+
+}
