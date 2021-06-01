@@ -4,7 +4,7 @@ export default function Gallery() {
     return (
 <div id="section2" className="container-fluid common" >
   <h2 className="">Gallery</h2>            
-  <button type="button" class="btn btn-primary magikbtn" data-toggle="collapse" data-target="#gallery">Click to Show Gallery</button>
+  <button type="button" class="btn btn-secondary magikbtn" data-toggle="collapse" data-target="#gallery">Click to Show Gallery</button>
   <div id="gallery" class="collapse gallery">
     <div class="row">
       {/* card */}

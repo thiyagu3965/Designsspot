@@ -65,9 +65,9 @@ iframe{
          border: rgb(80, 121, 160) solid 2px;
      }
   }
-  .btntxt > p{
+  .btntxt > h1{
       color: rgb(255, 255, 255);
-      font-size:smaller
+      font-size:
   }
   /* image of gallery */
 
