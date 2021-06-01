@@ -17,7 +17,7 @@ h1{
 }
 iframe{
     
- 
+
     width: 100%;
     align-self: center;
     border: 0;
@@ -30,16 +30,14 @@ iframe{
 .common{
     padding: 70px 0;
 }
-.section3{
-    float: left;
-    width: 50%;
-    /* border-right: lawngreen solid 2px; */
-    padding-right: -40px;
-    padding-bottom: 40px;
-}
-.map{
-    float: right;
-    width: 50%;
-    height: 50%;
-
-}
+.footer {
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(211, 181, 181, 0.692);
+    color: rgb(199, 35, 35);
+    text-align: right;
+  }
