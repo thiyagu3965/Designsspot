@@ -6,7 +6,7 @@ function App()
 
   return (
 <>
-        <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">  
+        <nav className="navbar navbar-expand bg-dark navbar-dark fixed-top">  
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="#section1">About Us</a>
