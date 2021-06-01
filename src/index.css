@@ -17,7 +17,8 @@ h1{
 }
 iframe{
     
-    margin-left: 28%;
+ 
+    width: 100%;
     align-self: center;
     border: 0;
 }
