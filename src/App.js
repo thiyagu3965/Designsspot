@@ -27,7 +27,7 @@ function App()
   </div>
 </Route> 
 
-<Route exact path="https://designsspot.netlify.app/uploads">
+<Route exact path="/uploads">
 <Navbar />
 <Section />
    <Uploadimage />

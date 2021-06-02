@@ -13,6 +13,9 @@ export default function Navbar() {
           <li className="nav-item">
             <a className="nav-link" href="#section3">Location And Address</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/uploads">Uploads</a>
+          </li>
         </ul>
       </nav>
     )
