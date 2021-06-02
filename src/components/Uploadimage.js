@@ -59,7 +59,7 @@ export default function Uploadimage() {
                 return  <div key={id} class="col-xs-6	col-sm-4	col-md-4	col-lg-3 ">
                             <div class="card" >
                                 <img class="card-img-top" src={url} alt="Card image" />
-                                <button className="btn btn-primary" onClick={deleteImage} value={id}>Delete Image</button>
+                                <button className="btn btn-danger" onClick={deleteImage} value={id}>Delete Image</button>
                             </div>       
                         </div>
                    
