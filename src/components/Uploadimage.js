@@ -30,34 +30,43 @@ export default function Uploadimage() {
              setImageUrl(newState)
          })  
     }
+    const deleteImage = (id) =>{
+        var delId = id.target.value
+        const StorageRef = firebase.storage().ref('image').child(delId);
+        const ImageRef = firebase.database().ref('image').child('uploads').child(delId)
+        StorageRef.delete().then(()=>{
+            ImageRef.remove();
+        })
+    }
     useEffect(() => {
         getImageUrlFromDB()
     }, [])
     return (
-    <div>
+    <>
         <div>
             <label className="form-label" for="customFile">Upload Image Files Here</label>
             <input type="file" className="form-control" accept="images/*" onChange={readImage} />
         </div>
 
       
-       <button type="button" class="btn btn-secondary magikbtn" data-toggle="collapse" data-target="#gallery">Click to Show Gallery</button>
-        <div id="gallery" class="collapse gallery">
+<button type="button" class="btn btn-secondary magikbtn" data-toggle="collapse" data-target="#gallery1">Click to Show Gallery</button>
+ <div id="gallery1" class="collapse gallery">
    
-    <>
-      
+ 
+    <div className="row">
+                   
       {imageUrl ? imageUrl.map(({id , url})=>{
-                return <div key={id} className="row">
-                    <div className="col-lg-3 col-sm-4 col-xs-6  "> 
-                        <div className="card" >
-                            <img className="card-img-top" src={url} alt="Card image" />
-                            
+                return  <div key={id} class="col-xs-6	col-sm-4	col-md-4	col-lg-3 ">
+                            <div class="card" >
+                                <img class="card-img-top" src={url} alt="Card image" />
+                                <button className="btn btn-primary" onClick={deleteImage} value={id}>Delete Image</button>
+                            </div>       
                         </div>
-                    </div>
-                </div>
-            }):''}
-   </>
-  </div>
-</div>
+                   
+            }):''} 
+    </div>
+ </div>
+ 
+</>
     )
 }

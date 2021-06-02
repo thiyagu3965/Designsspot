@@ -27,22 +27,23 @@ export default function Gallery() {
     return (
 <div id="section2" className="container-fluid common" >
   <h2 className="">Gallery</h2>            
+
+  
   <button type="button" class="btn btn-secondary magikbtn" data-toggle="collapse" data-target="#gallery">Click to Show Gallery</button>
   <div id="gallery" class="collapse gallery">
     
-     
+    <div  className="row">
+       
       
           {arr ? arr.map(({id , url})=>{
-                return <div key={id} className="row">
-                          <div class="col-lg-3 col-sm-4 col-xs-6 col-lg-2 "> 
-                           <div class="card" >
-                             <img class="card-img-top" src={url} alt="Card image" />
+                return<div key={id} class="col-xs-6	col-sm-4	col-md-4	col-lg-3 ">
+                        <div class="card border" >
+                          <img class="card-img-top" src={url} alt="Card image" />
+                        </div>       
+                      </div>
              
-                            </div>
-                          </div>
-                       </div>
-            }):''}
-   
+            }):''}                        
+    </div>
   </div>
 </div>
         
